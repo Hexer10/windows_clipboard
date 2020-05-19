@@ -1,6 +1,5 @@
 /// Exception throw when a clipboard operation fails.
 class ClipboardException implements Exception {
-
   /// See [ClipboardErrorId] enum
   final ClipboardErrorId error;
 
