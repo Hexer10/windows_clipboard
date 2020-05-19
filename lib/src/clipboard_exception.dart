@@ -5,6 +5,9 @@ class ClipboardException implements Exception {
 
   /// Initialize a [ClipboardException]
   const ClipboardException(this.error);
+
+  @override
+  String toString() => 'ClipboardException: $error';
 }
 
 /// Info about the clipboard error.

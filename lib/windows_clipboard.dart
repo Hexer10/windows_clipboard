@@ -6,7 +6,7 @@ import 'dart:ffi';
 import 'package:ffi/ffi.dart';
 import 'raw_clipboard.dart';
 
-export 'src/clipboard_error.dart';
+export 'src/clipboard_exception.dart';
 
 /// Get the current clipboard as [String].
 /// Throws a [ClipboardException] if this fails.

@@ -1,7 +1,7 @@
 /// Raw clipboard functions
 library raw_clipboard;
 
-export 'src/clipboard_error.dart';
+export 'src/clipboard_exception.dart';
 export 'src/close_clipboard.dart';
 export 'src/empty_clipboard.dart';
 export 'src/get_clipboard_data.dart';
