@@ -38,6 +38,15 @@ String getClipboardString() {
   return Utf8.fromUtf8(lpstr);
 }
 
+/// Get the current clipboard as [String].
+/// Returns null if this fails.
+String tryGetClipboardString() {
+  try {
+    return getClipboardString();
+  } on ClipboardException {
+    return null;
+  }
+}
 /// Set the current clipboard as [String].
 /// Throws a [ClipboardException] if this fails.
 void setClipboardString(String str) {
