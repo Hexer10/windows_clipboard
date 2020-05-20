@@ -1,11 +1,13 @@
 /// Exception throw when a clipboard operation fails.
 class ClipboardException implements Exception {
-
   /// See [ClipboardErrorId] enum
   final ClipboardErrorId error;
 
   /// Initialize a [ClipboardException]
   const ClipboardException(this.error);
+
+  @override
+  String toString() => 'ClipboardException: $error';
 }
 
 /// Info about the clipboard error.
