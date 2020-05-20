@@ -2,11 +2,8 @@ import 'dart:ffi';
 
 import 'dlls.dart';
 
-typedef GlobalUnlockC = Uint8 Function(Pointer mem);
-typedef GlobalUnlockDart = int Function(Pointer mem);
-
-final _globalUnlockFunc =
-    kernel32.lookupFunction<GlobalUnlockC, GlobalUnlockDart>('GlobalUnlock');
+final _globalUnlockFunc = kernel32.lookupFunction<Uint8 Function(Pointer mem),
+    int Function(Pointer mem)>('GlobalUnlock');
 
 /// Decrements the lock count associated with a memory object
 /// that was allocated with GMEM_MOVEABLE.
