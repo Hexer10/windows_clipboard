@@ -7,3 +7,7 @@
 - Fix setClipboardString
 - Score improvements
 - Minor changes
+
+# 1.0.2
+
+- Add `tryGetClipboardString`

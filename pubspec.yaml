@@ -1,6 +1,6 @@
 name: windows_clipboard
 description: Clipboard implementation on windows. This also have a easy to use library to avoid to fully implement the whole windows api.
-version: 1.0.1
+version: 1.1.0
 homepage: https://github.com/Hexer10/windows_clipboard
 
 environment:
@@ -11,4 +11,4 @@ dependencies:
 #  path: ^1.6.0
 
 dev_dependencies:
-  effective_dart: ^1.2.0
+  effective_dart: ^1.2.1
