@@ -4,6 +4,7 @@ library windows_clipboard;
 import 'dart:ffi';
 
 import 'package:ffi/ffi.dart';
+
 import 'raw_clipboard.dart';
 
 export 'src/clipboard_exception.dart';
@@ -49,7 +50,7 @@ void setClipboardString(String str) {
   }
 
   var len = str.length + 1;
-  var mem = allocate<Utf8>(count: len);
+  var mem = allocate<Uint8>(count: len);
   memcpy(mem, Utf8.toUtf8(str), len);
 
   if (setClipboardData(1, mem) == nullptr) {
